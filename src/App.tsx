@@ -1,9 +1,16 @@
-import { useState } from "react";
-
-import "./App.css";
+import { Routes, BrowserRouter, Route } from "react-router-dom";
+import LandingPage from "./pages/landing";
+import Footer from "./components/footer";
 
 function App() {
-  return <main className=" bg-black"></main>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
 export default App;
