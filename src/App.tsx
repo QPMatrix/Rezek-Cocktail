@@ -3,9 +3,8 @@ import { lazy, Suspense } from "react";
 import LandingPage from "./pages/landing";
 import Footer from "./components/footer";
 import Loading from "./components/loading";
-const CategoryPage = lazy(() => import("./pages/category"));
 const CategoryDetailPage = lazy(() => import("./pages/category-detail"));
-
+import Category from "./pages/category";
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +14,7 @@ function App() {
           path="/categories"
           element={
             <Suspense fallback={<Loading />}>
-              <CategoryPage />
+              <Category />
             </Suspense>
           }
         />
