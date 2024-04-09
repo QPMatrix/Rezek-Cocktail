@@ -1,25 +1,28 @@
 import { FaCopyright } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer
-      className="flex justify-center items-center bg-black text-white py-4"
+    <motion.footer
+      className="flex justify-center items-center bg-pink-200 text-purple-600 py-4"
       dir="rtl"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
       <div className="flex flex-row space-x-4">
-        <FaCopyright className="size-5 md:size-3  ml-2" />
+        <FaCopyright className="text-lg ml-2" />
         <p>جميع الحقوق محفوظة</p>
-        <Link
-          to="https://www.QPMatrix.tech"
+        <a
+          href="https://www.QPMatrix.tech"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline hover:text-gray-300"
+          className="underline hover:text-purple-800"
         >
           QPMatrix
-        </Link>
+        </a>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

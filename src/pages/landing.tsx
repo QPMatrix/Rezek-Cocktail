@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // Importing social media icons
 import { motion } from "framer-motion"; // Importing framer-motion for animations
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -55,7 +56,7 @@ const LandingPage = (props: Props) => {
         transition={{ duration: 1 }}
       >
         <Button className="mt-2 rounded-full w-48 bg-purple-500 hover:bg-purple-700 text-white">
-          ابدأ الطلب
+          <Link to="/categories">ابدأ الطلب</Link>
         </Button>
       </motion.div>
     </motion.main>
