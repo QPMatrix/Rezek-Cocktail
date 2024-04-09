@@ -1,0 +1,18 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Milkshake Cup -->
+  <rect x="25" y="10" width="50" height="80" rx="15" style="fill:white;stroke:black;stroke-width:2"/>
+  <!-- Milkshake Filling Animation -->
+  <rect x="27" y="88" width="46" height="76" rx="13" style="fill:pink;">
+    <animate attributeName="y" from="88" to="12" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="height" from="0" to="76" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <!-- Straw -->
+  <rect x="60" y="5" width="5" height="40" style="fill:red;"/>
+  <!-- Cup Outline -->
+  <rect x="25" y="10" width="50" height="80" rx="15" style="fill:none;stroke:black;stroke-width:2;stroke-dasharray:2"/>
+  <!-- Straw Stripes -->
+  <rect x="60" y="5" width="5" height="5" style="fill:white;"/>
+  <rect x="60" y="15" width="5" height="5" style="fill:white;"/>
+  <rect x="60" y="25" width="5" height="5" style="fill:white;"/>
+  <rect x="60" y="35" width="5" height="5" style="fill:white;"/>
+</svg>

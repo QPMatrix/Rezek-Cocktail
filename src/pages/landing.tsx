@@ -1,11 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // Importing social media icons
-import { motion } from "framer-motion"; // Importing framer-motion for animations
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-type Props = {};
-
-const LandingPage = (props: Props) => {
+const LandingPage = () => {
   return (
     <motion.main
       className="min-h-screen flex flex-col items-center justify-center bg-pink-200"

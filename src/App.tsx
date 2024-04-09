@@ -2,7 +2,9 @@ import { Routes, BrowserRouter, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import LandingPage from "./pages/landing";
 import Footer from "./components/footer";
+import Loading from "./components/loading";
 const CategoryPage = lazy(() => import("./pages/category"));
+const CategoryDetailPage = lazy(() => import("./pages/category-detail"));
 
 function App() {
   return (
@@ -12,8 +14,16 @@ function App() {
         <Route
           path="/categories"
           element={
-            <Suspense fallback={<span>Loading</span>}>
+            <Suspense fallback={<Loading />}>
               <CategoryPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/categories/:category"
+          element={
+            <Suspense fallback={<Loading />}>
+              <CategoryDetailPage />
             </Suspense>
           }
         />
