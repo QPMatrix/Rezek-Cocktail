@@ -16,7 +16,7 @@ const Category = () => {
       id: 2,
       name: "فخفينا",
       image: "/milkshakes.svg",
-      link: "/categories/milkshake-1",
+      link: "/categories/milkshake1",
     },
     {
       id: 3,
@@ -28,13 +28,13 @@ const Category = () => {
       id: 4,
       name: "مشروبات ساخنة ",
       image: "/hot_drinks.svg",
-      link: "/categories/hot-drinks",
+      link: "/categories/hotdrinks",
     },
     {
       id: 5,
       name: "بوظه",
       image: "/ice_cream.svg",
-      link: "/categories/ice-cream",
+      link: "/categories/icecream",
     },
     {
       id: 6,
@@ -46,7 +46,7 @@ const Category = () => {
       id: 6,
       name: "ميلك شيك",
       image: "/milkshake2.svg",
-      link: "/categories/milkshake-2",
+      link: "/categories/milkshake2",
     },
     {
       id: 6,
