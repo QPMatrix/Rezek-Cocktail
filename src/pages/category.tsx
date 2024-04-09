@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaHome } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
@@ -89,12 +88,7 @@ const Category = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-20 "
-                loading="lazy"
-              />
+              <img src={item.image} alt={item.name} className="w-20 " />
               <h2 className="font-bold sm:text-xl">{item.name}</h2>
             </motion.div>
           </Link>
