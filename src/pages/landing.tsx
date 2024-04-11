@@ -1,63 +1,99 @@
-import { Button } from "@/components/ui/button";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Lemon from "@/assets/landing/lemon.svg";
+import Carrot from "@/assets/landing/carrot.svg";
+import WaterMelon from "@/assets/landing/watermelon.svg";
+import Apple from "@/assets/landing/apple.svg";
 import { Link } from "react-router-dom";
+import Footer from "@/components/footer";
 
 const LandingPage = () => {
-  return (
-    <motion.main
-      className="min-h-screen flex flex-col items-center justify-center bg-pink-200"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <motion.img
-        src="/landing.svg"
-        alt="Milkshakes"
-        className="w-80"
-        loading="lazy"
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1 }}
-      />
-      <motion.div
-        className="flex flex-row mt-4"
-        initial={{ y: 100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <h1 className="text-4xl font-bold text-center mr-2 text-purple-600">
-          الرزق
-        </h1>
-        <h1 className="text-4xl font-bold text-center text-pink-600">كوكتيل</h1>
-      </motion.div>
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1 } },
+    exit: { opacity: 0, transition: { duration: 0.5 } },
+  };
 
-      <motion.div
-        className="flex flex-row justify-center items-center mt-4"
-        initial={{ y: 100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1 }}
+  return (
+    <motion.div
+      className="font-amiri z-0 flex flex-col items-center justify-center min-h-screen px-4 py-12 bg-green-200 relative"
+      dir="rtl"
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      variants={variants}
+    >
+      <motion.header
+        className="font-amiri flex flex-col items-center text-center"
+        variants={variants}
       >
-        <Button size="icon" variant="ghost" className="text-purple-600">
-          <FaFacebook className="mx-2 w-8 h-8" />
-        </Button>
-        <Button size="icon" variant="ghost" className="text-purple-600">
-          <FaTwitter className="mx-2 w-8 h-8" />
-        </Button>
-        <Button size="icon" variant="ghost" className="text-purple-600">
-          <FaInstagram className="mx-2 w-8 h-8" />
-        </Button>
-      </motion.div>
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 1 }}
+        <motion.img
+          src={Carrot}
+          alt="Carrot"
+          className="size-48"
+          variants={variants}
+        />
+        <motion.section
+          className="font-amiri flex flex-row justify-center items-center mt-10 space-x-4"
+          variants={variants}
+        >
+          <motion.img
+            src={Lemon}
+            alt="Lemon"
+            className="w-16 h-16 md:w-24 md:h-24"
+            variants={variants}
+          />
+          <motion.h1
+            className="font-amiri text-6xl text-red-600 font-semibold"
+            variants={variants}
+          >
+            كوكتيل
+          </motion.h1>
+          <motion.h1
+            className="font-amiri text-6xl text-blue-700 mr-2 font-semibold"
+            variants={variants}
+          >
+            الرزق
+          </motion.h1>
+        </motion.section>
+      </motion.header>
+      <motion.main
+        className="font-amiri flex flex-col items-center justify-center"
+        variants={variants}
       >
-        <Button className="mt-2 rounded-full w-48 bg-purple-500 hover:bg-purple-700 text-white">
-          <Link to="/categories">ابدأ الطلب</Link>
-        </Button>
-      </motion.div>
-    </motion.main>
+        <motion.p
+          className="font-amiri text-2xl text-gray-900 mt-6 text-center"
+          variants={variants}
+        >
+          مرحبا بكم في كوكتيل الرزق، نقدم لكم أشهى المشروبات بأفضل الأسعار
+        </motion.p>
+        <motion.section
+          className="font-amiri flex flex-row justify-center items-center mt-6 space-x-4"
+          variants={variants}
+        >
+          <motion.img
+            src={WaterMelon}
+            variants={variants}
+            alt="WaterMelon"
+            className="w-16 h-16"
+          />
+          <motion.button
+            className="font-amiri bg-green-500 hover:bg-green-700 text-white rounded-full px-8 py-2 mt-4"
+            variants={variants}
+          >
+            <Link to="/categories">القائمة</Link>
+          </motion.button>
+          <motion.img
+            src={Apple}
+            variants={variants}
+            alt="WaterMelon"
+            className="w-16 h-16"
+          />
+        </motion.section>
+      </motion.main>
+      <footer className="mt-10">
+        <Footer />
+      </footer>
+    </motion.div>
   );
 };
 

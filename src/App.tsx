@@ -1,7 +1,6 @@
 import { Routes, BrowserRouter, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import LandingPage from "./pages/landing";
-import Footer from "./components/footer";
 import Loading from "./components/loading";
 const CategoryDetailPage = lazy(() => import("./pages/category-detail"));
 import Category from "./pages/category";
@@ -27,7 +26,6 @@ function App() {
           }
         />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
