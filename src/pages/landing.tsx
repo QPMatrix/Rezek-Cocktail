@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import Lemon from "@/assets/landing/lemon.svg";
-import Carrot from "@/assets/landing/carrot.svg";
 import WaterMelon from "@/assets/landing/watermelon.svg";
 import Apple from "@/assets/landing/apple.svg";
+import Main from "@/assets/landing/main.svg";
 import { Link } from "react-router-dom";
 import Footer from "@/components/footer";
 
@@ -26,12 +26,6 @@ const LandingPage = () => {
         className="font-amiri flex flex-col items-center text-center"
         variants={variants}
       >
-        <motion.img
-          src={Carrot}
-          alt="Carrot"
-          className="size-48"
-          variants={variants}
-        />
         <motion.section
           className="font-amiri flex flex-row justify-center items-center mt-10 space-x-4"
           variants={variants}
@@ -55,6 +49,12 @@ const LandingPage = () => {
             الرزق
           </motion.h1>
         </motion.section>
+        <motion.img
+          src={Main}
+          alt="Main"
+          className="w-full rounded-sm"
+          variants={variants}
+        />
       </motion.header>
       <motion.main
         className="font-amiri flex flex-col items-center justify-center"

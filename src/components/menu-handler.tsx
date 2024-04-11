@@ -21,6 +21,7 @@ const MenuHandlers = ({ pathname }: { pathname: string }) => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     setOpen(false);
+    window.scrollTo(0, 0);
   }, [pathname]);
   return (
     <div className="z-50 fixed right-0 bottom-0 transform -translate-y-1/2">
@@ -28,7 +29,7 @@ const MenuHandlers = ({ pathname }: { pathname: string }) => {
         <DialogTrigger>
           <Button
             variant="outline"
-            className="rounded-full size-12"
+            className="rounded-full size-12 bg-white shadow-lg"
             size="icon"
             onClick={() => setOpen(!open)}
           >

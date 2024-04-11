@@ -1,6 +1,6 @@
 import Footer from "@/components/footer";
 import MenuHandlers from "@/components/menu-handler";
-import { FreshJuices } from "@/constants/frsh-juices";
+import { FreshJuices } from "@/constants/fresh-juices";
 import { FruitsShake } from "@/constants/fruit-shake";
 import { HotDrinks } from "@/constants/hot-drinks";
 import { MileShake1, MilkShake2 } from "@/constants/milkshake";
