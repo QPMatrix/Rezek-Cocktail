@@ -1,45 +1,39 @@
+import { PM, AS, AMPB, G, APM, GP, BP } from "@/assets/menu/natural";
 const FruitsShake = [
   {
     title: "منجا و أناناس",
     price: "20",
-    image:
-      "https://th.bing.com/th/id/OIP.1Z6Z9Z6Z9Z6Z9Z6Z9Z6Z9QHaE8?pid=ImgDet&rs=1",
+    image: PM,
   },
   {
     title: "توت بري ، توت أرضي و تفاح",
     price: "20",
-    image:
-      "https://th.bing.com/th/id/OIP.1Z6Z9Z6Z9Z6Z9Z6Z9Z6Z9QHaE8?pid=ImgDet&rs=1",
+    image: AS,
   },
   {
     title: "منجا ، أناناس ، بسفلورا و تفاح",
     price: "20",
-    image:
-      "https://th.bing.com/th/id/OIP.1Z6Z9Z6Z9Z6Z9Z6Z9Z6Z9QHaE8?pid=ImgDet&rs=1",
+    image: AMPB,
   },
   {
     title: "جروس",
     price: "20",
-    image:
-      "https://th.bing.com/th/id/OIP.1Z6Z9Z6Z9Z6Z9Z6Z9Z6Z9QHaE8?pid=ImgDet&rs=1",
+    image: G,
   },
   {
     title: "تفاح ، منجا و أناناس",
     price: "20",
-    image:
-      "https://th.bing.com/th/id/OIP.1Z6Z9Z6Z9Z6Z9Z6Z9Z6Z9QHaE8?pid=ImgDet&rs=1",
+    image: APM,
   },
   {
     title: "جروس و أناناس",
     price: "20",
-    image:
-      "https://th.bing.com/th/id/OIP.1Z6Z9Z6Z9Z6Z9Z6Z9Z6Z9QHaE8?pid=ImgDet&rs=1",
+    image: GP,
   },
   {
     title: "بسفلورا و أناناس",
     price: "20",
-    image:
-      "https://th.bing.com/th/id/OIP.1Z6Z9Z6Z9Z6Z9Z6Z9Z6Z9QHaE8?pid=ImgDet&rs=1",
+    image: BP,
   },
 ];
 export { FruitsShake };
