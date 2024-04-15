@@ -6,13 +6,14 @@ import {
   Oreo,
   Pista,
   Special,
+  Yougort,
 } from "@/assets/menu/milkshakes";
 
 const MilkShake2 = [
   {
     title: "ميلك شيك يوغرت",
     price: "20",
-    image: Milkshake,
+    image: Yougort,
   },
   {
     title: "ميلك شيك فواكه",
