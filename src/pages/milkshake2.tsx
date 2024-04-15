@@ -21,6 +21,7 @@ const Milkshakes = () => {
               src={item.image}
               alt={item.title}
               className="w-full h-64 object-fit rounded-lg mb-4"
+              loading="lazy"
             />
             <h2 className="font-bold text-2xl mb-2">{item.title}</h2>
             <p className=" font-bold text-xl">{item.price} ₪</p>

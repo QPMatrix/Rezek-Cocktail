@@ -21,7 +21,12 @@ const Category = () => {
         {Routes.map((item, index) => (
           <Link to={item.link} key={index}>
             <div className="bg-gray-100 hover:bg-white cursor-pointer duration-500 rounded-lg p-4 flex justify-between items-center">
-              <img src={item.image} alt={item.name} className="w-20 " />
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-20 "
+                loading="lazy"
+              />
               <h2 className="font-bold sm:text-xl">{item.name}</h2>
             </div>
           </Link>
